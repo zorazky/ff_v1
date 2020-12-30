@@ -1,0 +1,154 @@
+:root {
+    --dark-blue: #09396A;
+    --factor-blue: #2163A8;
+    --light-blue: #D2E8FF;
+    --regular-text: #2B2B2B;
+    --bg-grey: #D8D8D8;
+    --lines-grey: #D3D3D3;
+    --factor-yellow: #F8B253;
+    --factor-green: #7CB342;
+}
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: var(--main-bg-color);
+	color: var(--main-color);
+	margin: 0;
+}
+/****************************************************************** navbar */
+.logo {
+    width: 124px;
+    padding-top: 24px;
+}
+.navbar {
+	display: flex;
+	flex-direction: row;
+	background: var(--dark-blue);
+	color: var(--main-color);
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 101;
+	/*box-shadow: rgba(0,0,0,0.12) 0px 1px 4px 1px;*/
+}
+.navbar-nav {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	padding-left: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.nav-link {
+	float: left;
+	text-align: center;
+	padding: 21px 28px;
+	text-decoration: none;
+	font-size: 12px;
+	color: #fff;
+	position: relative;
+}
+
+.nav-link:hover {
+	cursor: pointer;
+}
+
+.navbar-nav i {
+	font-size: 1.2rem;
+}
+
+.nav-right {
+	margin-left: auto;
+}
+/****************************************************************** end navbar */
+
+
+/****************************************************************** sidebar */
+
+
+.sidebar {
+	width: 70px;
+	height: 100vh;
+	position: fixed;
+	margin-top: 62px;
+	background: var(--dark-blue);
+	box-shadow: rgba(0,0,0,0.12) 0px 1px 4px 1px;
+	overflow: hidden;
+	z-index: 100;
+	transition: width .5s;
+}
+
+.sidebar:hover {
+	width: 160px;
+}
+
+.sidebar-nav {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+}
+
+.sidebar-nav-item {
+	width: 100%;
+}
+
+.sidebar-nav-link {
+	display: flex;
+	align-items: center;
+	color: #fff;
+	text-decoration: none;
+}
+
+.sidebar-nav-link i {
+	font-size: 1.2rem;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.sidebar-nav-link div {
+	min-width: 70px;
+	height: 50px;
+	position: relative;
+}
+.sidebar-nav-link > span {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.sidebar-nav-link:hover {
+	background: var(--factor-blue);
+}
+.sidebar-expand .sidebar {
+	width: 160px;
+}
+
+.sidebar-expand .content {
+	margin-left: 160px;
+}
+
+/****************************************************************** end sidebar */
+
+.content-top-bar {
+    background: var(--factor-blue);
+    height: 40px;
+    
+}
+.content {
+	margin-left: 70px;
+	padding-top: 62px;
+	background: var(--second-bg-color);
+	transition: margin-left .5s;
+}
