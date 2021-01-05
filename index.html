@@ -123,11 +123,106 @@
     <!-- content -->
     <div class="content">
         <div class="content-top-bar">
+            <div class="select">
+                <select id="standard-select">
+                    <option value="Option 1">Overview</option>
+                    <option value="Option 2">Recent Entries</option>
+                    <option value="Option 3">Pre-Advances</option>
+                    <option value="Option 4">Alerts</option>
+                    <option value="Option 5">Credit Check</option>
+                    <option value="Option length">Option that has too long of a value to fit</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-m-12">
+                <div class="summary content-box">
+                    <div class="summary-item">
+                        <div class="summary-title">
+                            Net Funds Employed
+                        </div>
+                        <div class="summary-value">
+                            $6,621,280.00
+                        </div>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-title">
+                            Accounts Receivable
+                        </div>
+                        <div class="summary-value">
+                            $6,621,280.00
+                        </div>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-title">
+                            Reserves
+                        </div>
+                        <div class="summary-value">
+                            $6,621,280.00
+                        </div>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-title">
+                            Payables
+                        </div>
+                        <div class="summary-value">
+                            $6,621,280.00
+                        </div>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-title">
+                            AVG. CONC.
+                        </div>
+                        <div class="summary-value">
+                            0.25%
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+
+        </div>
+        <div class="row">
+            <div class="column col-6 col-m-12 col-sm-12">
+                <div class="content-box">
+                    <div class="content-box-top">
+                        Aging Summary
+                    </div>
+                    <div class="content-box-bottom">
+                        <div id="apex1"></div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-box-top">
+                        Invoices by Status
+                    </div>
+                    <div class="content-box-bottom">
+                        <div id="apex2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="column col-6 col-m-12 col-sm-12">
+                <div class="content-box">
+                    <div class="content-box-top">
+                        Aging Summary
+                    </div>
+                    <div class="content-box-bottom">
+                        <div id="apex3"></div>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="content-box-top">
+                        Invoices by Status
+                    </div>
+                    <div class="content-box-bottom">
+                        <div id="apex4"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- end content -->
-
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="js/app.js"></script>
 </body>
 
