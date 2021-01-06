@@ -34,6 +34,7 @@ function openCloseDropdown(event) {
     }
 }
 var options = {
+
     series: [
         {
             name: "Net Profit",
@@ -95,7 +96,9 @@ chart.render();
 
 
 var options2 = {
-    series: [44, 55, 41, 17, 15],
+    colors: ['#1674A2', '#7DCFD4', '#F8B253', '#D57F09'],
+    series: [15.11, 82.34, 2.5, 0],
+    labels: ["Apple", "Mango", "Banana", "Papaya"],
     chart: {
         type: 'donut',
     },
@@ -112,7 +115,27 @@ var options2 = {
     }]
 };
 
-var chart2 = new ApexCharts(document.querySelector("#apex2"), options2);
+var options3 = {
+    colors: ['#7CB342', '#EA3030', '#F8B253'],
+    series: [70, 7, 23],
+    labels: ["Paid", "Overdue", "Open"],
+    chart: {
+        type: 'donut',
+    },
+    responsive: [{
+        breakpoint: 480,
+        options: {
+            chart: {
+                width: 200
+            },
+            legend: {
+                position: 'bottom'
+            }
+        }
+    }]
+};
+
+var chart2 = new ApexCharts(document.querySelector("#apex2"), options3);
 chart2.render();
 
 var chart3 = new ApexCharts(document.querySelector("#apex3"), options2);
