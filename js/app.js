@@ -33,66 +33,7 @@ function openCloseDropdown(event) {
         }
     }
 }
-var options = {
 
-    series: [
-        {
-            name: "Net Profit",
-            data: [44, 55, 57, 56, 61, 58, 63, 60, 66],
-        },
-        {
-            name: "Revenue",
-            data: [76, 85, 101, 98, 87, 105, 91, 114, 94],
-        },
-        {
-            name: "Free Cash Flow",
-            data: [35, 41, 36, 26, 45, 48, 52, 53, 41],
-        },
-    ],
-    chart: {
-        type: "bar",
-        height: 250,
-        sparkline: {
-            enabled: true,
-        },
-    },
-    plotOptions: {
-        bar: {
-            horizontal: false,
-            columnWidth: "55%",
-            endingShape: "rounded",
-        },
-    },
-    dataLabels: {
-        enabled: false,
-    },
-    stroke: {
-        show: true,
-        width: 2,
-        colors: ["transparent"],
-    },
-    xaxis: {
-        categories: ["Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"],
-    },
-    yaxis: {
-        title: {
-            text: "$ (thousands)",
-        },
-    },
-    fill: {
-        opacity: 1,
-    },
-    tooltip: {
-        y: {
-            formatter: function (val) {
-                return "$ " + val + " thousands";
-            },
-        },
-    },
-};
-
-var chart = new ApexCharts(document.querySelector("#apex1"), options);
-chart.render();
 
 
 var options2 = {
@@ -101,12 +42,13 @@ var options2 = {
     labels: ["Apple", "Mango", "Banana", "Papaya"],
     chart: {
         type: 'donut',
+        height: 362
     },
     responsive: [{
         breakpoint: 480,
         options: {
             chart: {
-                width: 200
+                width: 300
             },
             legend: {
                 position: 'bottom'
@@ -121,12 +63,13 @@ var options3 = {
     labels: ["Paid", "Overdue", "Open"],
     chart: {
         type: 'donut',
+        height: 362
     },
     responsive: [{
         breakpoint: 480,
         options: {
             chart: {
-                width: 200
+                width: 300
             },
             legend: {
                 position: 'bottom'
@@ -135,11 +78,65 @@ var options3 = {
     }]
 };
 
+
+
+var options5 = {
+    colors: ['#7DCFD4', '#F8B253', '#D57F09'],
+    series: [{
+        name: 'Receivables',
+        data: [2.49, 2.03, 1.03, .80, .80]
+    }, {
+        name: 'Payables',
+        data: [1.34, .81, .086, .079, .079]
+    }],
+    chart: {
+        type: 'bar',
+        height: 350
+    },
+    plotOptions: {
+        bar: {
+            horizontal: false,
+            columnWidth: '55%',
+            // endingShape: 'rounded'
+        },
+    },
+    dataLabels: {
+        enabled: false
+    },
+    stroke: {
+        show: true,
+        width: 2,
+        colors: ['transparent']
+    },
+    xaxis: {
+        categories: ['Current', '1 - 30', '31 - 60', '61 - 90', '91+'],
+    },
+    yaxis: {
+        type: 'numeric',
+        title: {
+            text: '$ (millions)'
+        },
+
+    },
+    fill: {
+        opacity: 1
+    },
+    tooltip: {
+        y: {
+            formatter: function (val) {
+                return "$ " + val + " millions"
+            }
+        }
+    }
+};
+
+var chart = new ApexCharts(document.querySelector("#apex1"), options5);
+chart.render();
+
+
 var chart2 = new ApexCharts(document.querySelector("#apex2"), options3);
 chart2.render();
 
 var chart3 = new ApexCharts(document.querySelector("#apex3"), options2);
 chart3.render();
 
-var chart4 = new ApexCharts(document.querySelector("#apex4"), options2);
-chart4.render();

@@ -36,6 +36,7 @@ body {
 	right: 0;
 	left: 0;
 	z-index: 101;
+	justify-content: space-between;
 	/*box-shadow: rgba(0,0,0,0.12) 0px 1px 4px 1px;*/
 }
 .navbar-nav {
@@ -64,9 +65,35 @@ body {
 .navbar-nav i {
 	font-size: 1.2rem;
 }
-
+/****************************************************************** Right nav */
 .nav-right {
 	margin-left: auto;
+	background-color: var(--darker-blue);
+	padding-left: 2rem;
+}
+.nav-right-item {
+	align-self: center;
+	padding-right: 2rem;
+	
+}
+.nav-right-item a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* align-items: center;  */
+	color: #fff;
+	text-decoration: none;
+	font-size: 11px;
+	font-weight: 600;
+}
+.nav-right-item a:hover {
+	color: var(--factor-blue);
+}
+.nav-right-item a span {
+	margin-top: 4px;
+}
+.qb-logo img {
+	width:18px;
 }
 /****************************************************************** end navbar */
 
@@ -78,7 +105,7 @@ body {
 	width: 70px;
 	height: 100vh;
 	position: fixed;
-	margin-top: 62px;
+	margin-top: 63px;
 	background: var(--dark-blue);
 	box-shadow: rgba(0,0,0,0.12) 0px 1px 4px 1px;
 	overflow: hidden;
@@ -102,6 +129,12 @@ body {
 
 .sidebar-nav-item {
 	width: 100%;
+	margin-left: 20px;
+	
+}
+.sidebar-nav-item.active {
+	background-color: var(--factor-blue);
+	border-radius: 30px 0 0 30px;
 }
 
 .sidebar-nav-link {
@@ -109,13 +142,14 @@ body {
 	align-items: center;
 	color: #fff;
 	text-decoration: none;
+	border-radius: 30px 0 0 30px;
 }
 
 .sidebar-nav-link i {
 	font-size: 1.2rem;
 	color: #fff;
 	position: absolute;
-	left: 50%;
+	left: 40%;
 	top: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -127,11 +161,12 @@ body {
 }
 .sidebar-nav-link > span {
     font-size: 12px;
-    font-weight: 600;
+	font-weight: 600;
+	margin-left: -10px;
 }
 
 .sidebar-nav-link:hover {
-	background: var(--factor-blue);
+	background: var(--darker-blue);
 }
 .sidebar-expand .sidebar {
 	width: 160px;
@@ -349,6 +384,10 @@ select,
 	.col-sm-10 {width: 83.33%;}
 	.col-sm-11 {width: 91.66%;}
 	.col-sm-12 {width: 100%;}
+
+	.nav-right-item a span {
+		display: none;
+	}
 }
 
 /* Medium devices >= 768px */
@@ -365,6 +404,10 @@ select,
 	.col-m-10 {width: 83.33%;}
 	.col-m-11 {width: 91.66%;}
 	.col-m-12 {width: 100%;}
+
+	.nav-right-item a span {
+		display: block;
+	}
 }
 
 /* laptops/desktops >= 992px */
