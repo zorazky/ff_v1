@@ -8,7 +8,8 @@
 	--lines-grey: #D3D3D3;
 	--text-titles-grey: #979797;
     --factor-yellow: #F8B253;
-    --factor-green: #7CB342;
+	--factor-green: #7CB342;
+	--input-border: #8C99A6;
 }
 * {
     box-sizing: border-box;
@@ -197,8 +198,10 @@ body {
 }
 
 
-select {
-    /* A reset of styles, including removing the default dropdown arrow */
+#standard-select {
+	/* A reset of styles, including removing the default dropdown arrow */
+	-webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     /* Additional resets for further consistency */
     background-color: transparent;
@@ -215,7 +218,7 @@ select {
 	font-weight: 600;
   }
 /* for lower IE versions */
-select::-ms-expand {
+#standard-select::-ms-expand {
 	display: none;
 }
 .select {
@@ -246,7 +249,7 @@ select::-ms-expand {
 	pointer-events: none;
 }
 
-select,
+#standard-select,
 .select:after {
 	grid-area: select;
 }
@@ -272,7 +275,7 @@ select,
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	/* margin-left: 20px;
 	margin-right:20px; */
 }

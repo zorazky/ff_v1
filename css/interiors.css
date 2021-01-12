@@ -1,0 +1,203 @@
+
+.filters {
+    background-color: #D2E8FF;
+    height: 80px;
+    overflow-y: hidden;
+    transition: all .3s ease;
+}
+#toggle {
+    display: none;
+}
+#toggle:checked ~ .filters {
+   height: 220px;
+}
+
+
+.filters form {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.form-item {
+    margin-right:1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item label {
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+label.btn {
+    margin-bottom: 0;
+    font-size: .8rem;
+    text-align: center;
+    padding-top: 6px;
+}
+.more-filters {
+    margin-top: 20px;
+}
+
+.select-form {
+    /* A reset of styles, including removing the default dropdown arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Additional resets for further consistency */
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    width: 180px;
+    cursor: inherit;
+	
+	height: 30px;
+	color: var(--darker-blue);
+	padding-left: 1rem;
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+  }
+/* for lower IE versions */
+.select-form::-ms-expand {
+	display: none;
+}
+.select-ff {
+	width: 100%;
+	min-width: 15ch;
+	max-width: 180px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+	padding-right: 1rem;
+	cursor: pointer;
+	line-height: 1.1;
+	display: grid;
+	grid-template-areas: "select-ff";
+    align-items: center;
+    height: 30px;
+}
+
+/* to create the arrow */
+.select-ff::after {
+	content: "";
+	width: .6em;
+	height: .6em;
+	background-color: var(--darker-blue);
+	clip-path: polygon(50% 50%, 88% 24%, 100% 40%, 50% 75%, 0 40%, 12% 24%);
+	justify-self: end;
+    pointer-events: none;
+    margin-right: 10px;
+}
+
+.select-form,
+.select-ff:after {
+    grid-area: select-ff;
+}
+.input-ff {
+    appearance: none;
+    background-color: transparent;
+    width: 100%;
+	min-width: 15ch;
+    max-width: 180px;
+    height: 30px;
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+	padding-right: 1rem;
+	cursor: pointer;
+	line-height: 1.1;
+	/* display: grid;
+	grid-template-areas: "select-ff"; */
+    align-items: center;
+    
+    color: var(--darker-blue);
+	padding-left: 1rem;
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
+.input-ff:focus,
+.select-form:focus {
+    outline: none;
+    background-color: rgba(256,256,256,.4);
+    
+  }
+
+/********************************************************************** adding icons to inputs*/
+.input-icons i { 
+    position: absolute; 
+    right: 0;
+    margin-top: 8px;
+    margin-right: 8px;
+} 
+  
+.input-icons { 
+    position: relative;
+} 
+/********************************************************************** search input is longer*/
+input.input-search {
+    max-width: 244px;
+    width: 244px;
+    height: 30px;
+}
+input.input-date {
+    width:140px;
+    padding: 0;
+    padding-left: 10px;
+}
+
+.btn {
+    font-size: .8rem;
+    border:none;
+    min-width: 140px;
+    height: 30px;
+    background-color: var(--factor-blue);
+    border-radius: 4px;
+    padding-top: 1px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.btn:hover {
+    background: var(--dark-blue);
+}
+.btn-second {
+    background-color: #fff;
+    color: var(--factor-blue);
+}
+.btn-second:hover {
+    background-color: var(--light-blue);
+    border: 1px solid var(--factor-blue);
+}
+.form-item-btn {
+    align-self: flex-end;
+}
+.btn:focus {
+    outline: none;
+    border: 1px solid var(--dark-blue);
+}
+
+.summary-top {
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--factor-blue);
+	padding: .6rem 1rem 1rem 1rem;
+	border-bottom: 1px solid var(--lines-grey);
+    height: 36px;
+    width: 100%;
+}
+
+
+
+
+
+
+  
+
+
+
+
+
