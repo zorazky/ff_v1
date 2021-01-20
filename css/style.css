@@ -4,12 +4,16 @@
     --factor-blue: #2163A8;
     --light-blue: #D2E8FF;
     --regular-text: #2B2B2B;
-    --bg-grey: #D8D8D8;
+	--bg-grey: #D8D8D8;
+	--light-grey: #fbfbfb;
 	--lines-grey: #D3D3D3;
+	--factor-grey: #cccccc;
 	--text-titles-grey: #979797;
     --factor-yellow: #F8B253;
 	--factor-green: #7CB342;
 	--input-border: #8C99A6;
+
+	--status-pending: #FF3474;
 }
 * {
     box-sizing: border-box;
@@ -388,9 +392,9 @@ body {
 	.col-sm-11 {width: 91.66%;}
 	.col-sm-12 {width: 100%;}
 
-	.nav-right-item a span {
+	/* .nav-right-item a span {
 		display: none;
-	}
+	} */
 }
 
 /* Medium devices >= 768px */
@@ -443,4 +447,12 @@ body {
 	.col-xl-10 {width: 83.33%;}
 	.col-xl-11 {width: 91.66%;}
 	.col-xl-12 {width: 100%;}
+}
+
+@media only screen and (max-width: 767px) {
+	.navbar,
+	.sidebar,
+	.content {
+		display: none;
+	}
 }
