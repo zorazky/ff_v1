@@ -283,6 +283,11 @@ body {
 	/* margin-left: 20px;
 	margin-right:20px; */
 }
+.column {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
 .summary-item {
 	padding: 1rem 2rem 1rem 1rem;
 }
@@ -452,7 +457,8 @@ body {
 @media only screen and (max-width: 767px) {
 	.navbar,
 	.sidebar,
-	.content {
+	.content,
+	.modal {
 		display: none;
 	}
 }

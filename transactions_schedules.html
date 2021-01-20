@@ -300,7 +300,7 @@
                 <div class="summary content-box">
                     <div class="summary-top">
                         Invoice Summary
-                        <i class="fas fa-cog ico-action"></i>
+                        <a href="#modal-summary" class="icon-link"><i class="fas fa-cog ico-action"></i></a>
                     </div>
                     <div class="summary-item">
                         <div class="summary-title">
@@ -431,7 +431,8 @@
                             Individual
                         </div>
                         <i class="fas fa-expand-arrows-alt ico-action"></i>
-                        <i class="fas fa-cog ico-action"></i>
+                        <a href="#modal-table" class="icon-link"><i class="fas fa-cog ico-action"></i></a>
+
                     </div>
                 </div>
 
@@ -650,6 +651,155 @@
         </div>
 
     </div>
+
+    <div class="modal modal-summary" id="modal-summary">
+        <a href="" class="icon-link modal-close"><i class="fas fa-times"></i></a>
+
+        <div class="modal-top">
+            Invoice Summary Setting
+        </div>
+        <div class="modal-content">
+            <div class="column">
+                <div class="modal-item">
+                    <input type="checkbox" name="creditLimit" id="" checked>
+                    <label for="creditLimit">Credit Limit</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="creditUsed" id="" checked>
+                    <label for="creditUsed">Credit Used</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="creditAvailable" id="" checked>
+                    <label for="creditAvailable">Credit Available</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="grossInvoiceAmount" id="" checked>
+                    <label for="grossInvoiceAmount">Gross Invoice Amount</label>
+                </div>
+            </div>
+            <div class="column">
+                <div class="modal-item">
+                    <input type="checkbox" name="advanceAmount" id="" checked>
+                    <label for="advanceAmount">Advance Amount</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="carrierAmount" id="" checked>
+                    <label for="carrierAmount">Carrier Amount</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="escrowCap" id="" checked>
+                    <label for="escrowCap">Escrow Cap</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="presentEscrow" id="" checked>
+                    <label for="presentEscrow">Present Escrow</label>
+                </div>
+            </div>
+            <div class="column">
+                <div class="modal-item">
+                    <input type="checkbox" name="escrowNeeded" id="" checked>
+                    <label for="escrowNeeded">Escrow Needed</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="adjustment" id="" checked>
+                    <label for="adjustment">Adjustment</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="fuelAdvance" id="" checked>
+                    <label for="fuelAdvance">Fuel Advance</label>
+                </div>
+            </div>
+
+        </div>
+        <div class="modal-actions">
+            <button class="btn btn-primary">SAVE</button>
+            <a href="#" class="btn-link">CANCEL</a>
+        </div>
+    </div>
+    <a href="#main-menu-toggle" class="backdrop" hidden tabindex="-1"></a>
+
+    <div class="modal modal-summary" id="modal-table">
+        <a href="" class="icon-link modal-close"><i class="fas fa-times"></i></a>
+
+        <div class="modal-top">
+            Schedules Page Field Setting
+        </div>
+        <div class="modal-content">
+            <div class="column">
+                <div class="modal-item">
+                    <input type="checkbox" name="status" id="" checked>
+                    <label for="status">Status</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="client" id="" checked>
+                    <label for="client">Client</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="debtor" id="" checked>
+                    <label for="debtor">Debtor</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="sch" id="" checked>
+                    <label for="sch">Sch</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="inv" id="" checked>
+                    <label for="inv">Inv</label>
+                </div>
+            </div>
+            <div class="column">
+                <div class="modal-item">
+                    <input type="checkbox" name="po" id="" checked>
+                    <label for="po">Po</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="load" id="" checked>
+                    <label for="load">Load</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="debtorReply" id="" checked>
+                    <label for="debtorReply">Debtor Reply</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="fuel" id="" checked>
+                    <label for="fuel">Fuel</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="payment" id="" checked>
+                    <label for="payment">Payment</label>
+                </div>
+            </div>
+            <div class="column">
+                <div class="modal-item">
+                    <input type="checkbox" name="invoice" id="" checked>
+                    <label for="invoice">Invoice</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="invDate" id="" checked>
+                    <label for="invDate">Invoice Date</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="adjustment" id="" checked>
+                    <label for="adjustment">Adjustment</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="carrier" id="" checked>
+                    <label for="carrier">Carrier</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="bol" id="" checked>
+                    <label for="bol">BOL #</label>
+                </div>
+            </div>
+
+        </div>
+        <div class="modal-actions">
+            <button class="btn btn-primary">SAVE</button>
+            <a href="#" class="btn-link">CANCEL</a>
+        </div>
+    </div>
+
+    <a href="#main-menu-toggle" class="backdrop" hidden tabindex="-1"></a>
     <!-- end content -->
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="js/app.js"></script>
