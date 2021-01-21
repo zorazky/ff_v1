@@ -707,6 +707,58 @@ thead:hover tr{
 /********************************************************************** End Summary Modal*/
 
 
+/********************************************************************** Full Screen */
+#fullScreen {
+    display: none; 
+    visibility: hidden;
+}
+
+#fullScreen:checked ~ .content {
+    margin-left: 0;
+    padding-top: 0;
+}
+
+#fullScreen:checked ~ .sidebar {
+    transform: translateX(-70px);
+}
+
+#fullScreen:checked ~ .navbar {
+    transform: translateY(-70px);
+}
+
+#fullScreen:checked ~ * .col-12 {
+   /* background-color: red; */
+   padding: 0;
+}
+#fullScreen:checked ~ * .content-box {
+    border-left: none;
+    border-right: none;
+    
+}
+#fullScreen:checked ~ * .table-handlers{
+    /* background-color: red; */
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+
+ #fullScreen:checked ~ * .summary-item {
+	padding: .5rem 1rem .5rem 1rem;
+}
+#fullScreen:checked ~ * .summary-title {
+	font-size: 10px;
+}
+#fullScreen:checked ~ * .summary-value {
+	font-size: 12px;
+}
+#fullScreen:checked ~ * .summary.content-box {
+    margin-top: 0;
+    border-top: none;
+}
+#fullScreen:checked ~ * .full-screen-btn i {
+   color: var(--factor-green);
+}
+/********************************************************************** End Full Screen */
 
   @media only screen and (max-width: 1066px) {
 
