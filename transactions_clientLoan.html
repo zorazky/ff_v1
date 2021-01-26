@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorfox - Transactions</title>
+
+    <!-- Import lib -->
+    <!-- <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"> -->
+
+
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://oswaldovazquez.com/ff/fontawesome-free/css/all.min.css"> -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- End import lib -->
+
+
+    <!-- ONLINE -->
+    <!-- <link rel="stylesheet" href="https://oswaldovazquez.com/ff/css/style.css">
+    <link rel="stylesheet" href="https://oswaldovazquez.com/ff/css/interiors.css"> -->
+
+
+    <!-- LOCAL -->
+    <link rel="stylesheet" type="text/css" href="fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/interiors.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="fullScreen">
+
+
+    <!-- navbar -->
+    <div class="navbar">
+        <!-- nav left -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link">
+                    <i class="fas fa-bars" onclick="collapseSidebar()"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <img src="assets/ff_logo.png" alt="Factorfox logo" class="logo">
+            </li>
+        </ul>
+        <!-- end nav left -->
+        <ul class="navbar-nav nav-right">
+            <li class="nav-right-item">
+                <a href="#" class="">
+                    <div>
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <span>Support</span>
+                </a>
+            </li>
+            <li class="nav-right-item">
+                <a href="#" class="">
+                    <div>
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <span>Bank Files</span>
+                </a>
+            </li>
+            <li class="nav-right-item">
+                <a href="#" class="">
+                    <div>
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <span>Calendar</span>
+                </a>
+            </li>
+            <li class="nav-right-item">
+                <a href="#" class="">
+                    <div class="qb-logo">
+                        <img src="assets/qb_logo.png" alt="">
+                    </div>
+                    <span>QuickBooks</span>
+                </a>
+            </li>
+            <li class="nav-right-item">
+                <a href="#" class="">
+                    <div>
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <span>Chat</span>
+                </a>
+            </li>
+            <li class="nav-right-item">
+                <a href="#" class="">
+                    <div>
+                        <i class="fas fa-user-cog"></i>
+                    </div>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li class="nav-right-item">
+                <a href="#" class="">
+                    <div>
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <!-- end navbar -->
+    <!-- sidebar -->
+    <div class="sidebar">
+        <ul class="sidebar-nav">
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <span>
+                        Dashboard
+                    </span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <span>Setup</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-address-book"></i>
+                    </div>
+                    <span>Contacts</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item active">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>
+                    <span>Transactions</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-money-bill-alt"></i>
+                    </div>
+                    <span>Purchase <br>Orders</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <span>Reports</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <span>Graphs</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-hourglass-end"></i>
+                    </div>
+                    <span>Payment <br>Due</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-adjust"></i>
+                    </div>
+                    <span>Integration</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <span>Community</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- end sidebar -->
+    <!-- content -->
+    <div class="content">
+        <div class="content-top-bar">
+            <div class="select">
+                <select id="standard-select">
+                    <option value="Option 1">Schedules</option>
+                    <option value="Option 2">Upload Only</option>
+                    <option value="Option 3">No Submited Invoices</option>
+                    <option value="Option 4">Payments</option>
+                    <option value="Option 5">Receipts</option>
+                    <option value="Option 5">All Transactions</option>
+                    <option value="Option 5">Escrow</option>
+                    <option value="Option 5">Consultants</option>
+                    <option value="Option 5" selected>Client Loan</option>
+                    <option value="Option 5">Lenders</option>
+                    <option value="Option 5">Fuel Advances</option>
+                    <option value="Option 5">Carrier Payment</option>
+                    <option value="Option 5">Prefund</option>
+                    <option value="Option length">Option that has too long of a value to fit</option>
+                </select>
+            </div>
+        </div>
+        <input type="checkbox" id="toggle">
+        <div class="filters-short">
+            <form action="">
+                <div class="row">
+                    <div class="form-item">
+                        <label for="client">Clients</label>
+                        <div class="select-ff">
+                            <select id="client" name="client" class="select-form" autofocus tabindex="1">
+                                <option value="">Please Select</option>
+                                <option value="first">John Doe</option>
+                                <option value="second">Jane Smith</option>
+                                <option value="third">A very and Inusual Long Name</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-item form-item-btn">
+                        <button class="btn btn-main" tabindex="4"><span>Search</span></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-12 col-m-12">
+                <div class="summary content-box">
+                    <div class="summary-top">
+                        Loan Payment Summary
+                        <a href="#modal-summary" class="icon-link"><i class="fas fa-cog ico-action"></i></a>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-title">
+                            Total Loan Amoun
+                        </div>
+                        <div class="summary-value">
+                            $0.00
+                        </div>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-title">
+                            Total Interest Amount
+                        </div>
+                        <div class="summary-value">
+                            $0.00
+                        </div>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-title">
+                            Principal Paid Till Date
+                        </div>
+                        <div class="summary-value">
+                            $0.00
+                        </div>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-title">
+                            Interest Paid Till Date
+                        </div>
+                        <div class="summary-value">
+                            $0.00
+                        </div>
+                    </div>
+                    <div class="summary-green">
+                        <div class="summary-item">
+                            <div class="summary-title">
+                                Principal Amount
+                            </div>
+                            <div class="summary-value">
+                                $0.00
+                            </div>
+                        </div>
+                        <div class="summary-item">
+                            <div class="summary-title">
+                                Interest Amount
+                            </div>
+                            <div class="summary-value">
+                                $0.00
+                            </div>
+                        </div>
+                        <div class="summary-item">
+                            <div class="summary-title">
+                                Total Amount
+                            </div>
+                            <div class="summary-value">
+                                $0.00
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="table-content col-12 col-m-12 col-sm-12">
+                <div class="table-handlers">
+                    <div class="handlers-left">
+                        <button class="btn btn-primary">Add / Review Loan</button>
+                        <div>
+                            <button class="btn btn-third">Rollback</button>
+                        </div>
+                    </div>
+                    <div class="handlers-right">
+                        <div class="slidecontainer">
+                            <i class="fas fa-minus-circle"></i>
+                            <input type="range" min="1" max="100" value="50" class="range" id="myRange">
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+
+                        <div class="full-screen-btn">
+
+                            <label for="fullScreen">
+                                <i class="fas fa-expand-arrows-alt ico-action"></i>
+                            </label>
+                        </div>
+                        <a href="#modal-table" class="icon-link"><i class="fas fa-cog ico-action"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="content-box">
+                    <div class="content-box-title">
+                        Client Loan
+
+                    </div>
+                    <div class="table-section">
+                        <div class="table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Loan Name</th>
+                                        <th>Due Date</th>
+                                        <th class="quantity-cell">Interest Amount</th>
+                                        <th class="quantity-cell">Principal Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>Client SEMI LOAN</th>
+                                        <th>02/02/20</th>
+                                        <th class="input-cell">
+                                            <div class="form-item">
+                                                <div>
+                                                    <input class="table-input-checkbox" type="checkbox" name="" id="">
+                                                    <input type="text" class="input-ff" placeholder="0.00">
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="input-cell">
+                                            <div class="form-item">
+                                                <div>
+                                                    <input class="table-input-checkbox" type="checkbox" name="" id="">
+                                                    <input type="text" class="input-ff" placeholder="0.00">
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>Client SEMI LOAN</th>
+                                        <th>02/02/20</th>
+                                        <th class="input-cell">
+                                            <div class="form-item">
+                                                <div>
+                                                    <input class="table-input-checkbox" type="checkbox" name="" id="">
+                                                    <input type="text" class="input-ff" placeholder="0.00">
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="input-cell">
+                                            <div class="form-item">
+                                                <div>
+                                                    <input class="table-input-checkbox" type="checkbox" name="" id="">
+                                                    <input type="text" class="input-ff" placeholder="0.00">
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th>Client SEMI LOAN</th>
+                                        <th>02/02/20</th>
+                                        <th class="input-cell">
+                                            <div class="form-item">
+                                                <div>
+                                                    <input class="table-input-checkbox" type="checkbox" name="" id="">
+                                                    <input type="text" class="input-ff" placeholder="0.00">
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="input-cell">
+                                            <div class="form-item">
+                                                <div>
+                                                    <input class="table-input-checkbox" type="checkbox" name="" id="">
+                                                    <input type="text" class="input-ff" placeholder="0.00">
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal modal-summary" id="modal-summary">
+        <a href="" class="icon-link modal-close"><i class="fas fa-times"></i></a>
+
+        <div class="modal-top">
+            Invoice Summary Setting
+        </div>
+        <div class="modal-content">
+            <div class="column">
+                <div class="modal-item">
+                    <input type="checkbox" name="creditLimit" id="" checked>
+                    <label for="creditLimit">Credit Limit</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="creditUsed" id="" checked>
+                    <label for="creditUsed">Credit Used</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="creditAvailable" id="" checked>
+                    <label for="creditAvailable">Credit Available</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="grossInvoiceAmount" id="" checked>
+                    <label for="grossInvoiceAmount">Gross Invoice Amount</label>
+                </div>
+            </div>
+            <div class="column">
+                <div class="modal-item">
+                    <input type="checkbox" name="advanceAmount" id="" checked>
+                    <label for="advanceAmount">Advance Amount</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="carrierAmount" id="" checked>
+                    <label for="carrierAmount">Carrier Amount</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="escrowCap" id="" checked>
+                    <label for="escrowCap">Escrow Cap</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="presentEscrow" id="" checked>
+                    <label for="presentEscrow">Present Escrow</label>
+                </div>
+            </div>
+            <div class="column">
+                <div class="modal-item">
+                    <input type="checkbox" name="escrowNeeded" id="" checked>
+                    <label for="escrowNeeded">Escrow Needed</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="adjustment" id="" checked>
+                    <label for="adjustment">Adjustment</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="fuelAdvance" id="" checked>
+                    <label for="fuelAdvance">Fuel Advance</label>
+                </div>
+            </div>
+
+        </div>
+        <div class="modal-actions">
+            <button class="btn btn-primary">SAVE</button>
+            <a href="#" class="btn-link">CANCEL</a>
+        </div>
+    </div>
+    <a href="#main-menu-toggle" class="backdrop" hidden tabindex="-1"></a>
+
+    <div class="modal modal-summary" id="modal-table">
+        <a href="" class="icon-link modal-close"><i class="fas fa-times"></i></a>
+
+        <div class="modal-top">
+            Schedules Page Field Setting
+        </div>
+        <div class="modal-content">
+            <div class="column">
+                <div class="modal-item">
+                    <input type="checkbox" name="status" id="" checked>
+                    <label for="status">Status</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="client" id="" checked>
+                    <label for="client">Client</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="debtor" id="" checked>
+                    <label for="debtor">Debtor</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="sch" id="" checked>
+                    <label for="sch">Sch</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="inv" id="" checked>
+                    <label for="inv">Inv</label>
+                </div>
+            </div>
+            <div class="column">
+                <div class="modal-item">
+                    <input type="checkbox" name="po" id="" checked>
+                    <label for="po">Po</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="load" id="" checked>
+                    <label for="load">Load</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="debtorReply" id="" checked>
+                    <label for="debtorReply">Debtor Reply</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="fuel" id="" checked>
+                    <label for="fuel">Fuel</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="payment" id="" checked>
+                    <label for="payment">Payment</label>
+                </div>
+            </div>
+            <div class="column">
+                <div class="modal-item">
+                    <input type="checkbox" name="invoice" id="" checked>
+                    <label for="invoice">Invoice</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="invDate" id="" checked>
+                    <label for="invDate">Invoice Date</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="adjustment" id="" checked>
+                    <label for="adjustment">Adjustment</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="carrier" id="" checked>
+                    <label for="carrier">Carrier</label>
+                </div>
+                <div class="modal-item">
+                    <input type="checkbox" name="bol" id="" checked>
+                    <label for="bol">BOL #</label>
+                </div>
+            </div>
+
+        </div>
+        <div class="modal-actions">
+            <button class="btn btn-primary">SAVE</button>
+            <a href="#" class="btn-link">CANCEL</a>
+        </div>
+    </div>
+
+    <a href="#main-menu-toggle" class="backdrop" hidden tabindex="-1"></a>
+    <!-- end content -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

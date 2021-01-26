@@ -1,5 +1,5 @@
 
-.filters {
+.filters, .filters-short {
     background-color: #D2E8FF;
     height: 80px;
     overflow-y: hidden;
@@ -13,7 +13,7 @@
 }
 
 
-.filters form {
+.filters form, .filters-short form {
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -439,13 +439,21 @@ table th {
   vertical-align: middle;
   font-weight: 400;
 }
-table tr:hover {
+/* table tr:hover {
     background: var(--light-blue);
     cursor: pointer;
-}
+} */
 
-tr:nth-child(even) {
+/* tr:nth-child(even) {
     background-color: var(--light-grey);
+} */
+.input-cell .form-item {
+    text-align: right;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.table-input-checkbox {
+    margin-right: 10px;
 }
 
 thead tr,
@@ -501,7 +509,50 @@ thead:hover tr{
 
 /********************************************************************** End Table */
 
+/********************************************************************** Table Combined */
+.hide {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+.detail-arrow {
+    color: var(--factor-blue);
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: block;
+}
 
+/* .table-detail th table tbody,
+.table-detail th table thead{
+   visibility: hidden;
+   display: none;
+}  */
+
+/* .schedule-group input:checked {
+    visibility: visible;
+    opacity: 1;
+}
+*/
+/* .table-detail th table tbody,
+.table-detail th table thead {
+    visibility: visible;
+   display: inline-block;
+} 
+ */
+
+.table-detail {
+    position: relative;
+}
+.table-detail th{
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+.table-detail th table th {
+    padding: 12px;
+}
+
+/********************************************************************** End Table Combined*/
 
 /********************************************************************** Switch Handler*/
 .switch-individual {
@@ -758,13 +809,12 @@ thead:hover tr{
 #fullScreen:checked ~ * .full-screen-btn i {
    color: var(--factor-green);
 }
+
 /********************************************************************** End Full Screen */
 
-  @media only screen and (max-width: 1066px) {
+  @media only screen and (max-width: 1174px) {
 
-    .filters {
-        height: 140px;
-    }
+    
     .form-item-btn {
         margin-top: 10px;
     }
@@ -778,4 +828,10 @@ thead:hover tr{
      .more-filters-btn {
         margin-top: 0px;
      }
+  }
+
+  @media only screen and (max-width: 1063px) {
+    .filters {
+        height: 140px;
+    }
   }
