@@ -192,7 +192,8 @@ body {
 .content-top-bar {
     background: var(--factor-blue);
     height: 40px;
-    
+	display: flex;
+	flex-direction: row;
 }
 .content {
 	margin-left: 70px;
@@ -221,8 +222,28 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
   }
+  #second-select {
+	  /* A reset of styles, including removing the default dropdown arrow */
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Additional resets for further consistency */
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    width: 100%;
+    cursor: inherit;
+	outline: none;
+	height: 40px;
+	color: var(--darker-blue);
+	padding-left: 1rem;
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+  }
 /* for lower IE versions */
-#standard-select::-ms-expand {
+#standard-select::-ms-expand,
+#second-select::-ms-expand {
 	display: none;
 }
 .select {
@@ -241,6 +262,10 @@ body {
 	grid-template-areas: "select";
 	align-items: center;
 }
+.select-second {
+	border-left: none;
+	background-color: var(--light-blue);
+}
 
 /* to create the arrow */
 .select::after {
@@ -252,11 +277,25 @@ body {
 	justify-self: end;
 	pointer-events: none;
 }
+.select-second::after {
+	background-color: var(--darker-blue);
+}
 
 #standard-select,
 .select:after {
 	grid-area: select;
 }
+#second-select,
+.select:after {
+	grid-area: select;
+}
+
+.subsections {
+	max-width: 260px;
+	background-color: var(--dark-blue);
+	height: 100vh;
+}
+
 
   /****************************************************************** End Bar and Select Button*/
 
@@ -265,8 +304,8 @@ body {
 	border: 1px solid var(--lines-grey);
 	/* margin-top:10px; */
 	margin-bottom: 20px;
-	
 	border-radius: 4px;
+	height: 100%;
 }
 .summary.content-box {
 	margin-bottom:0px;
@@ -279,6 +318,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	align-items: stretch;
 	/* justify-content: space-between; */
 	/* margin-left: 20px;
 	margin-right:20px; */
@@ -326,6 +366,11 @@ body {
 }
 .content-box-bottom {
 	padding: 10px;
+}
+.content-box-bottom form {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 [class*="col-"] {
 	padding: 10px;

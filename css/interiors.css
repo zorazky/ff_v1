@@ -201,13 +201,16 @@ input.input-date {
 }
 .form-item-btn button {
     margin-right: 10px;
+    margin-top: 10px;
 }
 .btn:focus {
     outline: none;
     border: 1px solid var(--dark-blue);
 }
-.summary-top {
+.summary-top,
+.content-box-title {
     border-bottom: 1px solid var(--lines-grey);
+    margin-bottom: 10px;
 }
 
 .summary-top,
@@ -816,7 +819,7 @@ thead:hover tr{
 
     
     .form-item-btn {
-        margin-top: 10px;
+        /* margin-top: 10px; */
     }
 
     #toggle:checked ~ .filters {
