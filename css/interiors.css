@@ -495,6 +495,10 @@ thead:hover tr{
     color: var(--factor-blue);
     font-weight: 600;
 }
+.table-status-green {
+    color: var(--factor-green);
+    font-weight: 600;
+}
 
 .menu-empty {
     color: var(--factor-blue);
@@ -559,10 +563,12 @@ thead:hover tr{
 
 /********************************************************************** Switch Handler*/
 .switch-individual {
+    display: flex;
     font-size: 11px;
     vertical-align: middle;
     color: var(--text-titles-grey);
     margin-right: 10px;
+    align-items: center;
 }
 
 
@@ -572,7 +578,8 @@ thead:hover tr{
     margin: 0;
   }
   .switch {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     height: 2em;
     position: relative;
     vertical-align: middle;
@@ -580,16 +587,22 @@ thead:hover tr{
     font-size: 12px;
     margin-right: 4px;
     margin-left: 4px;
+    margin-top: 4px;
   }
-  .switch {
-    display: inline-block;
-    height: 2em;
-    position: relative;
-    vertical-align: middle;
-    width: 3.5em;
-  }
+ 
   .slider {
     background-color: var(--dark-blue);
+    border-radius: 1em;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    
+    transition: all 0.4s ease 0s;
+  }
+  .slider-green {
+    background-color: var(--factor-grey);
     border-radius: 1em;
     bottom: 0;
     cursor: pointer;
@@ -600,7 +613,7 @@ thead:hover tr{
     transition: all 0.4s ease 0s;
   }
   
-  .slider::before {
+  .slider::before,  .slider-green::before {
     background-color: white;
     border-radius: 0.7em;
     bottom: 4px;
@@ -614,7 +627,11 @@ thead:hover tr{
   input:checked + .slider {
     background-color: var(--factor-blue);
   }
-  input:checked + .slider:before {
+  input:checked + .slider-green {
+    background-color: var(--factor-green);
+  }
+  input:checked + .slider:before,
+  input:checked + .slider-green:before {
     -webkit-transform: translateX(1.5em);
     -ms-transform: translateX(1.5em);
     transform: translateX(1.5em);
@@ -759,7 +776,6 @@ thead:hover tr{
 
 
 /********************************************************************** End Summary Modal*/
-
 
 /********************************************************************** Full Screen */
 #fullScreen {
