@@ -204,6 +204,12 @@ body {
 .content-main {
 	display: flex;
 }
+.page-title {
+	color: var(--factor-blue);
+	font-weight: 600;
+	margin-top: 10px;
+	
+}
 
 
 #standard-select {

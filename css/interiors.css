@@ -23,6 +23,7 @@
     margin-right:1rem;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .form-item label {
@@ -193,6 +194,9 @@ input.input-date {
 .btn-link:hover,
 .btn-link:focus {
     color: var(--dark-blue);
+}
+.btn-row {
+    width: 100%;
 }
 .form-item-btn {
     align-self: flex-end;
