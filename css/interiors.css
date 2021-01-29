@@ -30,6 +30,9 @@
     font-size: 11px;
     margin-bottom: 5px;
 }
+.color-red {
+    color: var(--factor-red);
+}
 label.btn {
     margin-bottom: 0;
     font-size: .8rem;
@@ -446,14 +449,14 @@ table th {
   vertical-align: middle;
   font-weight: 400;
 }
-/* table tr:hover {
+table tr:hover {
     background: var(--light-blue);
     cursor: pointer;
-} */
+}
 
-/* tr:nth-child(even) {
+tr:nth-child(even) {
     background-color: var(--light-grey);
-} */
+}
 .input-cell .form-item {
     text-align: right;
     margin-right: 0;
