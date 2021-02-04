@@ -434,8 +434,9 @@ body {
 	height: 36px;
 }
 .content-box-bottom {
-	padding: 10px;
+	padding: 1rem;
 }
+.content-box-bottom,
 .content-box-bottom form {
 	display: flex;
 	flex-direction: row;

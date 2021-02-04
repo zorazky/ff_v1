@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorfox - Setup / Company / Defaults</title>
+
+    <!-- Import lib -->
+    <!-- <link rel="stylesheet"
+            href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"> -->
+
+
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://oswaldovazquez.com/ff/fontawesome-free/css/all.min.css"> -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- End import lib -->
+
+
+    <!-- ONLINE -->
+    <!-- <link rel="stylesheet" href="https://oswaldovazquez.com/ff/css/style.css">
+    <link rel="stylesheet" href="https://oswaldovazquez.com/ff/css/interiors.css"> -->
+
+
+    <!-- LOCAL -->
+    <link rel="stylesheet" type="text/css" href="fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/interiors.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="navbar">
+        <!-- nav left -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link">
+                    <i class="fas fa-bars" onclick="collapseSidebar()"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <img src="assets/ff_logo.png" alt="Factorfox logo" class="logo">
+            </li>
+        </ul>
+        <!-- end nav left -->
+        <ul class="navbar-nav nav-right">
+            <li class="nav-right-item">
+                <a href="#" class="">
+                    <div>
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <span>Support</span>
+                </a>
+            </li>
+            <li class="nav-right-item">
+                <a href="#" class="">
+                    <div>
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <span>Bank Files</span>
+                </a>
+            </li>
+            <li class="nav-right-item">
+                <a href="#" class="">
+                    <div>
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <span>Calendar</span>
+                </a>
+            </li>
+            <li class="nav-right-item">
+                <a href="#" class="">
+                    <div class="qb-logo">
+                        <img src="assets/qb_logo.png" alt="">
+                    </div>
+                    <span>QuickBooks</span>
+                </a>
+            </li>
+            <li class="nav-right-item">
+                <a href="#" class="">
+                    <div>
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <span>Chat</span>
+                </a>
+            </li>
+            <li class="nav-right-item">
+                <a href="#" class="">
+                    <div>
+                        <i class="fas fa-user-cog"></i>
+                    </div>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li class="nav-right-item">
+                <a href="#" class="">
+                    <div>
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <!-- end navbar -->
+    <!-- sidebar -->
+    <div class="sidebar">
+        <ul class="sidebar-nav">
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <span>
+                        Dashboard
+                    </span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item active">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <span>Setup</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-address-book"></i>
+                    </div>
+                    <span>Contacts</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>
+                    <span>Transactions</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-money-bill-alt"></i>
+                    </div>
+                    <span>Purchase <br>Orders</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <span>Reports</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <span>Graphs</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-hourglass-end"></i>
+                    </div>
+                    <span>Payment <br>Due</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-adjust"></i>
+                    </div>
+                    <span>Integration</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <span>Community</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- end sidebar -->
+    <div class="subsection">
+
+    </div>
+    <div class="content">
+        <div class="content-top-bar">
+            <div class="select">
+                <select id="standard-select">
+                    <option value="Option 1" selected>Company</option>
+                    <option value="Option 2">Terms</option>
+                    <option value="Option 3">Staff</option>
+                    <option value="Option 4">Reminders</option>
+                    <option value="Option 5">Terminology</option>
+                    <option value="Option 6">Website Application</option>
+                    <option value="Option 7">Prospect Settings</option>
+                    <option value="Option 8">Tax</option>
+                    <option value="Option 9">Invoice Color Settings</option>
+                </select>
+            </div>
+        </div>
+        <div class="content-main">
+            <div class="subsections">
+                <ul>
+                    <li><a href="">Password</a></li>
+                    <li><a href="">Staff</a></li>
+                    <li><a href="">Payments / Receipts</a></li>
+                    <li><a href="" class="subsection-active">Defaults</a></li>
+                    <li><a href="">Banking</a></li>
+                    <li><a href="">Adjustments</a></li>
+                    <li><a href="">Automatic Adjustment</a></li>
+                    <li><a href="">Document Type</a></li>
+                    <li><a href="">Tasks</a></li>
+                    <li><a href="">Checklist</a></li>
+                    <li><a href="">Integrations</a></li>
+                    <li><a href="">Chart Of Account</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <div class="row col-12 col-m-12">
+                    <div class="page-title">
+                        Default Settings
+                    </div>
+                </div>
+
+                <div class="col-12 col-m-12">
+                    <div class="content-box">
+                        <div class="content-box-title">
+                            Industries
+                        </div>
+                        <div class="content-box-bottom">
+                            <div class="form-item">
+                                <div class="switch-individual switch-main">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <div class="slider-green"></div>
+                                    </label>
+                                    General
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="switch-individual switch-main">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <div class="slider-green"></div>
+                                    </label>
+                                    Transportation
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="switch-individual switch-main">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <div class="slider-green"></div>
+                                    </label>
+                                    Purchase Order
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-m-12">
+                    <div class="content-box">
+                        <div class="content-box-title">
+                            Location
+                        </div>
+                        <div class="content-box-bottom">
+
+                            <div class="form-item">
+                                <label for="accountType">Country</label>
+                                <div class="select-ff">
+                                    <select id="accountType" name="accountType" class="select-form" tabindex="3">
+                                        <option value="">Please Select</option>
+                                        <option value="first">One</option>
+                                        <option value="second">Two</option>
+                                        <option value="third">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label for="accountType">Currency</label>
+                                <div class="select-ff">
+                                    <select id="accountType" name="accountType" class="select-form" tabindex="3">
+                                        <option value="">Please Select</option>
+                                        <option value="first">One</option>
+                                        <option value="second">Two</option>
+                                        <option value="third">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label for="accountType">Time Zone</label>
+                                <div class="select-ff">
+                                    <select id="accountType" name="accountType" class="select-form" tabindex="3">
+                                        <option value="">Please Select</option>
+                                        <option value="first">One</option>
+                                        <option value="second">Two</option>
+                                        <option value="third">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label for="accountType">Date Format</label>
+                                <div class="select-ff">
+                                    <select id="accountType" name="accountType" class="select-form" tabindex="3">
+                                        <option value="">Please Select</option>
+                                        <option value="first">One</option>
+                                        <option value="second">Two</option>
+                                        <option value="third">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-m-12">
+                    <div class="content-box">
+                        <div class="content-box-title">
+                            Transaction Page Setup
+                        </div>
+                        <div class="content-box-bottom">
+                            <div class="form-item">
+                                <span class="label-radio-options">Invoice Order</span>
+                                <div class="radio-options">
+                                    <label class="radio radio-before">
+                                        <span class="radio__input">
+                                            <input type="radio" name="radio">
+                                            <span class="radio__control"></span>
+                                        </span>
+                                        <span class="radio__label">Ascending</span>
+                                    </label>
+                                    <label class="radio radio-before">
+                                        <span class="radio__input">
+                                            <input type="radio" name="radio">
+                                            <span class="radio__control"></span>
+                                        </span>
+                                        <span class="radio__label">Descending</span>
+                                    </label>
+
+
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="switch-individual switch-main">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <div class="slider-green"></div>
+                                    </label>
+                                    Show the Not Submitted Invoices Tab on Transactions Page
+                                </div>
+                            </div>
+                            <div class="form-item form-item-btn">
+                                <button class="btn btn-third btn-box"><span>Edit Color Settings</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-m-12">
+                    <div class="content-box">
+                        <div class="content-box-title">
+                            Invoice
+                        </div>
+                        <div class="content-box-bottom">
+                            <div class="form-item">
+                                <label for="accountType">Payments <span class="color-red">*</span> </label>
+                                <div class="select-ff">
+                                    <select id="accountType" name="accountType" class="select-form" tabindex="3">
+                                        <option value="">Please Select</option>
+                                        <option value="first">One</option>
+                                        <option value="second">Two</option>
+                                        <option value="third">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label for="accountType">Receipt <span class="color-red">*</span> </label>
+                                <div class="select-ff">
+                                    <select id="accountType" name="accountType" class="select-form" tabindex="3">
+                                        <option value="">Please Select</option>
+                                        <option value="first">One</option>
+                                        <option value="second">Two</option>
+                                        <option value="third">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label>Float Days</label>
+                                <div>
+                                    <input type="text" class="input-ff" placeholder="" tabindex="4">
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label>Flag Days</label>
+                                <div>
+                                    <input type="text" class="input-ff" placeholder="" tabindex="5">
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label>New Terms Default <span class="color-red">*</span></label>
+                                <div>
+                                    <input type="text" class="input-ff" placeholder="" tabindex="6">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-m-12">
+                    <div class="content-box">
+                        <div class="content-box-title">
+                            Calculation Settings
+                        </div>
+                        <div class="content-box-bottom">
+                            <div class="form-item">
+                                <span class="label-radio-options">Apply Short Payments to</span>
+                                <div class="radio-options">
+                                    <label class="radio radio-before">
+                                        <span class="radio__input">
+                                            <input type="radio" name="radio">
+                                            <span class="radio__control"></span>
+                                        </span>
+                                        <span class="radio__label">Advances</span>
+                                    </label>
+                                    <label class="radio radio-before">
+                                        <span class="radio__input">
+                                            <input type="radio" name="radio">
+                                            <span class="radio__control"></span>
+                                        </span>
+                                        <span class="radio__label">Discounts</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="switch-individual switch-main">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <div class="slider-green"></div>
+                                    </label>
+                                    Keep invoice open until Full Invoice Amount is received
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <span class="label-radio-options">When entering partial receipts, calculate the
+                                    discounts:</span>
+                                <div class="radio-options">
+                                    <label class="radio radio-before">
+                                        <span class="radio__input">
+                                            <input type="radio" name="radio">
+                                            <span class="radio__control"></span>
+                                        </span>
+                                        <span class="radio__label">On the reduced invoice/advance amount, on the day of
+                                            each partial receipt</span>
+                                    </label>
+                                    <label class="radio radio-before">
+                                        <span class="radio__input">
+                                            <input type="radio" name="radio">
+                                            <span class="radio__control"></span>
+                                        </span>
+                                        <span class="radio__label">On the full invoice/advance amount, on the date of
+                                            each partial receipt</span>
+                                    </label>
+                                    <label class="radio radio-before">
+                                        <span class="radio__input">
+                                            <input type="radio" name="radio">
+                                            <span class="radio__control"></span>
+                                        </span>
+                                        <span class="radio__label">On the final receipt only</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-m-12">
+                    <div class="content-box">
+                        <div class="content-box-title">
+                            Transportation Settings
+                        </div>
+                        <div class="content-box-bottom">
+
+                            <div class="form-item">
+                                <label>Fuel advance amount to client</label>
+                                <div>
+                                    <input type="text" class="input-ff" placeholder="" tabindex="4">
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label>Fuel advance notification days</label>
+                                <div>
+                                    <input type="text" class="input-ff" placeholder="" tabindex="5">
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="switch-individual switch-main">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <div class="slider-green"></div>
+                                    </label>
+                                    Is Percentage Amount
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 form-item form-item-btn btn-row ">
+                    <button class="btn btn-main btn-box"><span>Update</span></button>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
