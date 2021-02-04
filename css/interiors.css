@@ -208,6 +208,9 @@ input.input-date {
 }
 .form-item-btn button {
     margin-right: 10px;
+    /* margin-top: 10px; */
+}
+button.btn-box {
     margin-top: 10px;
 }
 .btn:focus {
@@ -217,7 +220,7 @@ input.input-date {
 .summary-top,
 .content-box-title {
     border-bottom: 1px solid var(--lines-grey);
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .summary-top,
@@ -428,6 +431,11 @@ margin-left: 10px;
     /* min-height: 100vh; */
 }
 .menu-icon {
+    font-size: 1rem;
+}
+
+.icon-table i {
+    color: var(--factor-blue);
     font-size: 1rem;
 }
 

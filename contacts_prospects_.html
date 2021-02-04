@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Factorfox - Transactions</title>
+    <title>Factorfox - Contacts</title>
 
     <!-- Import lib -->
     <!-- <link rel="stylesheet"
@@ -202,87 +202,159 @@
         <div class="content-top-bar">
             <div class="select">
                 <select id="standard-select">
-                    <option value="Option 1" selected>Company</option>
-                    <option value="Option 2">Terms</option>
-                    <option value="Option 3">Staff</option>
-                    <option value="Option 4">Reminders</option>
-                    <option value="Option 5">Terminology</option>
-                    <option value="Option 6">Website Application</option>
-                    <option value="Option 7">Prospect Settings</option>
-                    <option value="Option 8">Tax</option>
-                    <option value="Option 9">Invoice Color Settings</option>
+                    <option value="Option 1" selected>Prospects</option>
+                    <option value="Option 2">Clients</option>
+                    <option value="Option 3">Customers</option>
+                    <option value="Option 4">Consultants</option>
+                    <option value="Option 5">Lenders</option>
+                    <option value="Option 6">Suppliers</option>
+                    <option value="Option 7">Freight Brokers</option>
+                    <option value="Option 8">Carriers</option>
+                    <option value="Option 9">Accountant</option>
+                    <option value="Option 9">Match</option>
                 </select>
             </div>
         </div>
         <div class="content-main">
-            <div class="subsections">
-                <ul>
-                    <li><a href="" class="subsection-active">Password</a></li>
-                    <li><a href="">Staff</a></li>
-                    <li><a href="">Payments / Receipts</a></li>
-                    <li><a href="">Defaults</a></li>
-                    <li><a href="">Banking</a></li>
-                    <li><a href="">Adjustments</a></li>
-                    <li><a href="">Automatic Adjustment</a></li>
-                    <li><a href="">Document Type</a></li>
-                    <li><a href="">Tasks</a></li>
-                    <li><a href="">Checklist</a></li>
-                    <li><a href="">Integrations</a></li>
-                    <li><a href="">Chart Of Account</a></li>
-                </ul>
-            </div>
-            <div class="row col-12">
-                <div class="col-6 col-m-12">
+
+            <div class="row tabs">
+                <div class="row col-12 col-m-12 bottom-line">
+                    <div class="col-12 tabs-button">
+
+                        <div class="tabs-section">
+                            <div class="tab">
+                                <a href="" class="tab-active">All</a>
+                            </div>
+                            <div class="tab">
+                                <a href="">Client</a>
+                            </div>
+                            <div class="tab">
+                                <a href="">Debtor</a>
+                            </div>
+                        </div>
+
+
+                        <button class="btn btn-main"><span>Add Prospect</span></button>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-m-12">
                     <div class="content-box">
                         <div class="content-box-title">
-                            Security Details
+                            Search
                         </div>
                         <div class="content-box-bottom">
                             <form action="">
                                 <div class="form-item">
-                                    <label>Login Name</label>
+                                    <label>Company</label>
                                     <div>
                                         <input type="text" class="input-ff" placeholder="">
 
                                     </div>
                                 </div>
-                                <div class="form-item form-item-btn btn-row">
-                                    <button class="btn btn-main btn-box"><span>Update</span></button>
+                                <div class="form-item">
+                                    <label>Name</label>
+                                    <div>
+                                        <input type="text" class="input-ff" placeholder="">
+
+                                    </div>
+                                </div>
+                                <div class="form-item">
+                                    <label>Email</label>
+                                    <div>
+                                        <input type="text" class="input-ff" placeholder="">
+
+                                    </div>
+                                </div>
+
+                                <div class="form-item">
+                                    <label for="status">Status</label>
+                                    <div class="select-ff">
+                                        <select id="status" name="status" class="select-form" autofocus tabindex="1">
+                                            <option value="">Please Select</option>
+                                            <option value="first">Active</option>
+                                            <option value="second">Inactive</option>
+                                            <option value="third">A very and Inusual Long Name</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-item form-item-btn btn-row ">
+                                    <button class="btn btn-main btn-box"><span>Search</span></button>
                                 </div>
                             </form>
                         </div>
                     </div>
+
                 </div>
-                <div class="col-6 col-m-12">
+
+                <div class="col-12 col-m-12">
                     <div class="content-box">
                         <div class="content-box-title">
-                            Change Password
+                            Checklist
                         </div>
-                        <div class="content-box-bottom">
-                            <form action="">
-                                <div class="form-item">
-                                    <label>New Password</label>
-                                    <div>
-                                        <input type="text" class="input-ff" placeholder="">
+                        <div class="table-section">
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th><input type="checkbox" name="" id=""></th>
+                                            <th>Company</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Lead Type</th>
+                                            <th>Lead Status</th>
+                                            <th>Request Document</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th><input type="checkbox" name=""></th>
+                                            <th><a href="#" class="table-link">Alaska Test Com</a></th>
+                                            <th>Thomas Reddy</th>
+                                            <th>alaska@gmail.com</th>
+                                            <th>Prospective Customer</th>
+                                            <th class="table-status-green">Active</th>
+                                            <th class="icon-table"><i class="fas fa-file"></i></th>
+                                        </tr>
+                                        <tr>
+                                            <th><input type="checkbox" name=""></th>
+                                            <th><a href="#" class="table-link">Alaska Test Com</a></th>
+                                            <th>Thomas Reddy</th>
+                                            <th>alaska@gmail.com</th>
+                                            <th>Prospective Customer</th>
+                                            <th class="table-status-green">Active</th>
+                                            <th class="icon-table"><i class="fas fa-file"></i></th>
+                                        </tr>
+                                        <tr>
+                                            <th><input type="checkbox" name=""></th>
+                                            <th><a href="#" class="table-link">Alaska Test Com</a></th>
+                                            <th>Thomas Reddy</th>
+                                            <th>alaska@gmail.com</th>
+                                            <th>Prospective Customer</th>
+                                            <th class="table-status-green">Active</th>
+                                            <th class="icon-table"><i class="fas fa-file"></i></th>
+                                        </tr>
 
-                                    </div>
-                                </div>
-                                <div class="form-item">
-                                    <label>Confirm Password</label>
-                                    <div>
-                                        <input type="text" class="input-ff" placeholder="">
 
-                                    </div>
-                                </div>
-                                <div class="form-item form-item-btn btn-row">
-                                    <button class="btn btn-main btn-box"><span>Update</span></button>
-                                </div>
-                            </form>
+
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
+
                     </div>
                 </div>
+
             </div>
+
+
+
         </div>
+
+
     </div>
 </body>
 
