@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Factorfox - Transactions</title>
+    <title>Factorfox - Setup / Prospect Settings</title>
 
     <!-- Import lib -->
     <!-- <link rel="stylesheet"
@@ -202,83 +202,58 @@
         <div class="content-top-bar">
             <div class="select">
                 <select id="standard-select">
-                    <option value="Option 1" selected>Company</option>
+                    <option value="Option 1">Company</option>
                     <option value="Option 2">Terms</option>
                     <option value="Option 3">Staff</option>
                     <option value="Option 4">Reminders</option>
                     <option value="Option 5">Terminology</option>
                     <option value="Option 6">Website Application</option>
-                    <option value="Option 7">Prospect Settings</option>
+                    <option value="Option 7" selected>Prospect Settings</option>
                     <option value="Option 8">Tax</option>
                     <option value="Option 9">Invoice Color Settings</option>
                 </select>
             </div>
         </div>
         <div class="content-main">
-            <div class="subsections">
-                <ul>
-                    <li><a href="">Password</a></li>
-                    <li><a href="">Staff</a></li>
-                    <li><a href="">Payments / Receipts</a></li>
-                    <li><a href="">Defaults</a></li>
-                    <li><a href="">Banking</a></li>
-                    <li><a href="">Adjustments</a></li>
-                    <li><a href="">Automatic Adjustment</a></li>
-                    <li><a href="">Document Type</a></li>
-                    <li><a href="">Tasks</a></li>
-                    <li><a href="" class="subsection-active">Checklist</a></li>
-                    <li><a href="">Integrations</a></li>
-                    <li><a href="">Chart Of Account</a></li>
-                </ul>
-            </div>
 
-            <div class="row tabs">
-                <div class="row col-12 col-m-12 bottom-line">
-                    <div class="col-12">
 
-                        <div class="tabs-section">
-                            <div class="tab">
-                                <a href="" class="tab-active">Prospective Client</a>
-                            </div>
-                            <div class="tab">
-                                <a href="">Prospective Customer</a>
-                            </div>
-                            <div class="tab">
-                                <a href="">Schedules</a>
-                            </div>
-                        </div>
+            <div class="row col-12 col-m-12">
+                <div class="row col-12 col-m-12">
 
+                    <div class="page-title">
+                        Prospects Settings
                     </div>
+
 
                 </div>
 
                 <div class="col-12 col-m-12">
                     <div class="content-box">
                         <div class="content-box-title">
-                            Add Prospective Client
+                            Add Prospects
                         </div>
                         <div class="content-box-bottom">
                             <form action="">
+
                                 <div class="form-item">
-                                    <label>Description</label>
+                                    <label for="accountType">Type <span class="color-red">*</span> </label>
+                                    <div class="select-ff">
+                                        <select id="accountType" name="accountType" class="select-form" tabindex="3">
+                                            <option value="">Please Select</option>
+                                            <option value="first">One</option>
+                                            <option value="second">Two</option>
+                                            <option value="third">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-item">
+                                    <label>Name <span class="color-red">*</span></label>
                                     <div>
-                                        <input type="text" class="input-ff" placeholder="">
-
+                                        <input type="text" class="input-ff" placeholder="" tabindex="4">
                                     </div>
                                 </div>
-                                <div class="form-item">
-                                    <label>Show</label>
-                                    <div class="switch-individual">
-
-                                        <label class="switch">
-                                            <input type="checkbox">
-                                            <div class="slider-green"></div>
-                                        </label>
-                                        Active
-                                    </div>
-                                </div>
-                                <div class="form-item form-item-btn">
-                                    <button class="btn btn-main"><span>Add</span></button>
+                                <div class="form-item form-item-btn  btn-row">
+                                    <button class="btn btn-main btn-box" tabindex="12"><span>Add</span></button>
                                 </div>
                             </form>
                         </div>
@@ -289,7 +264,7 @@
                 <div class="col-12 col-m-12">
                     <div class="content-box">
                         <div class="content-box-title">
-                            Checklist
+                            Leads
                         </div>
                         <div class="table-section">
                             <div class="table-responsive">
@@ -297,32 +272,117 @@
                                     <thead>
                                         <tr>
                                             <th><input type="checkbox" name="" id=""></th>
-                                            <th>Description</th>
+                                            <th>Lead Status</th>
                                             <th>Status</th>
-                                            <th>Created Date</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <th><input type="checkbox" name=""></th>
-                                            <th><a href="#" class="table-link">UCC Filing</a></th>
+                                            <th><a href="#" class="table-link">National Bank 2</a></th>
                                             <th class="table-status-green">Active</th>
-                                            <th>28 / 05 / 20</th>
                                         </tr>
                                         <tr>
                                             <th><input type="checkbox" name=""></th>
-                                            <th><a href="#" class="table-link">UCC Filing</a></th>
+                                            <th><a href="#" class="table-link">Test</a></th>
                                             <th class="table-status-green">Active</th>
-                                            <th>28 / 05 / 20</th>
                                         </tr>
                                         <tr>
                                             <th><input type="checkbox" name=""></th>
-                                            <th><a href="#" class="table-link">UCC Filing</a></th>
+                                            <th><a href="#" class="table-link">12345</a></th>
                                             <th class="table-status-green">Active</th>
-                                            <th>28 / 05 / 20</th>
                                         </tr>
+                                        <tr>
+                                            <th><input type="checkbox" name=""></th>
+                                            <th><a href="#" class="table-link">Assign Client Staff</a></th>
+                                            <th class="table-status-green">Active</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+                <div class="col-12 col-m-12">
+                    <div class="content-box">
+                        <div class="content-box-title">
+                            Ratings
+                        </div>
+                        <div class="table-section">
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th><input type="checkbox" name="" id=""></th>
+                                            <th>Rating</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th><input type="checkbox" name=""></th>
+                                            <th><a href="#" class="table-link">National Bank 2</a></th>
+                                            <th class="table-status-green">Active</th>
+                                        </tr>
+                                        <tr>
+                                            <th><input type="checkbox" name=""></th>
+                                            <th><a href="#" class="table-link">Test</a></th>
+                                            <th class="table-status-green">Active</th>
+                                        </tr>
+                                        <tr>
+                                            <th><input type="checkbox" name=""></th>
+                                            <th><a href="#" class="table-link">12345</a></th>
+                                            <th class="table-status-green">Active</th>
+                                        </tr>
+                                        <tr>
+                                            <th><input type="checkbox" name=""></th>
+                                            <th><a href="#" class="table-link">Assign Client Staff</a></th>
+                                            <th class="table-status-green">Active</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+                <div class="col-12 col-m-12">
+                    <div class="content-box">
+                        <div class="content-box-title">
+                            Referrals
+                        </div>
+                        <div class="table-section">
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th><input type="checkbox" name="" id=""></th>
+                                            <th>Referral Type</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th><input type="checkbox" name=""></th>
+                                            <th><a href="#" class="table-link">National Bank 2</a></th>
+                                            <th class="table-status-green">Active</th>
+                                        </tr>
+                                        <tr>
+                                            <th><input type="checkbox" name=""></th>
+                                            <th><a href="#" class="table-link">Test</a></th>
+                                            <th class="table-status-green">Active</th>
+                                        </tr>
+                                        <tr>
+                                            <th><input type="checkbox" name=""></th>
+                                            <th><a href="#" class="table-link">12345</a></th>
+                                            <th class="table-status-green">Active</th>
+                                        </tr>
+                                        <tr>
+                                            <th><input type="checkbox" name=""></th>
+                                            <th><a href="#" class="table-link">Assign Client Staff</a></th>
+                                            <th class="table-status-green">Active</th>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
