@@ -304,8 +304,12 @@ body {
 	min-width: 220px;
 	max-width: 260px;
 	background-color: var(--light-blue);
-	height: calc(100vh - 100px);
+	/* height: calc(100vh - 100px); */
+	/* display: flex;
+	flex-flow: column;
+	height: 100vh; */
 }
+
 .subsections ul li a {
 	text-decoration: none;
 	color: var(--dark-blue);
@@ -327,6 +331,7 @@ body {
 .subsections ul li a.subsection-active {
 	opacity: 1;
 }
+
 
 
   /****************************************************************** End Bar and Select Button*/
@@ -584,6 +589,12 @@ body {
 	.col-xl-10 {width: 83.33%;}
 	.col-xl-11 {width: 91.66%;}
 	.col-xl-12 {width: 100%;}
+
+	.subsections {
+		
+		height: calc(100vh - 100px);
+		
+	}
 }
 
 @media only screen and (max-width: 767px) {
