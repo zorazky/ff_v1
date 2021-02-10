@@ -309,6 +309,9 @@ body {
 	flex-flow: column;
 	height: 100vh; */
 }
+.sub-short {
+	height: calc(100vh - 100px);
+}
 
 .subsections ul li a {
 	text-decoration: none;

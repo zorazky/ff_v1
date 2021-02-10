@@ -1,8 +1,12 @@
 
 .filters, .filters-short {
-    background-color: #D2E8FF;
+    background-color: var(--light-blue);
     height: 80px;
     overflow-y: hidden;
+    transition: all .3s ease;
+}
+.filters-flex {
+    background-color: var(--light-blue);
     transition: all .3s ease;
 }
 #toggle {
@@ -13,7 +17,7 @@
 }
 
 
-.filters form, .filters-short form {
+.filters form, .filters-short form, .filters-flex form {
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -688,7 +692,7 @@ thead:hover tr{
     left: 0;
     position: absolute;
     right: 0;
-    
+    top: 0;
     transition: all 0.4s ease 0s;
   }
   .slider-green {
