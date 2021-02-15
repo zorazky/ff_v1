@@ -576,6 +576,7 @@ body {
 	.col-side-bar {
 		width: 100%;
 	}
+	
 }
 
 /* large laptops and desktops >= 1200px */
@@ -594,9 +595,7 @@ body {
 	.col-xl-12 {width: 100%;}
 
 	.subsections {
-		
 		height: calc(100vh - 100px);
-		
 	}
 }
 

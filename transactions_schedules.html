@@ -27,8 +27,8 @@
 
     <!-- LOCAL -->
     <link rel="stylesheet" type="text/css" href="fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/interiors.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/interiors.css">
 </head>
 
 <body>
@@ -437,7 +437,7 @@
                     <div class="handlers-right">
                         <div class="slidecontainer">
                             <i class="fas fa-minus-circle"></i>
-                            <input type="range" min="1" max="100" value="50" class="range" id="myRange">
+                            <input type="range" min="8" max="16" value="11" class="range" id="myRange">
                             <i class="fas fa-plus-circle"></i>
                         </div>
                         <div class="switch-individual">
@@ -467,7 +467,7 @@
                     </div>
                     <div class="table-section">
                         <div class="table-responsive">
-                            <table>
+                            <table id="mainTable">
                                 <thead>
                                     <tr>
                                         <th><input type="checkbox" name="" id=""></th>
@@ -825,8 +825,9 @@
 
     <a href="#main-menu-toggle" class="backdrop" hidden tabindex="-1"></a>
     <!-- end content -->
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="js/app.js"></script>
+
+    <script src="./js/collapse_btn.js"></script>
+    <script src="./js/textSlider.js"></script>
 
 </body>
 
