@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorfox - Setup / Company / Banking</title>
+
+    <!-- Import lib -->
+    <!-- <link rel="stylesheet"
+            href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"> -->
+
+
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://oswaldovazquez.com/ff/fontawesome-free/css/all.min.css"> -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- End import lib -->
+
+    <!-- LOCAL -->
+    <link rel="stylesheet" type="text/css" href="fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/interiors.css">
+    <link rel="stylesheet" href="./css/client.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="navbar">
+        <!-- nav left -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link">
+                    <i class="fas fa-bars" onclick="collapseSidebar()"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <img src="./assets/ff_logo.png" alt="Factorfox logo" class="logo">
+            </li>
+        </ul>
+        <!-- end nav left -->
+        <ul class="navbar-nav nav-right">
+            <li class="nav-right-item">
+                <a href="#" class="">
+                    <div>
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <span>Support</span>
+                </a>
+            </li>
+            <li class="nav-right-item">
+                <a href="#" class="">
+                    <div>
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <span>Bank Files</span>
+                </a>
+            </li>
+            <li class="nav-right-item">
+                <a href="#" class="">
+                    <div>
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <span>Calendar</span>
+                </a>
+            </li>
+            <li class="nav-right-item">
+                <a href="#" class="">
+                    <div class="qb-logo">
+                        <img src="assets/qb_logo.png" alt="">
+                    </div>
+                    <span>QuickBooks</span>
+                </a>
+            </li>
+            <li class="nav-right-item">
+                <a href="#" class="">
+                    <div>
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <span>Chat</span>
+                </a>
+            </li>
+            <li class="nav-right-item">
+                <a href="#" class="">
+                    <div>
+                        <i class="fas fa-user-cog"></i>
+                    </div>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li class="nav-right-item">
+                <a href="#" class="">
+                    <div>
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <!-- end navbar -->
+    <!-- sidebar -->
+    <div class="sidebar">
+        <ul class="sidebar-nav">
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <span>
+                        Dashboard
+                    </span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <span>Setup</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item  active">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-address-book"></i>
+                    </div>
+                    <span>Contacts</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>
+                    <span>Transactions</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-money-bill-alt"></i>
+                    </div>
+                    <span>Purchase <br>Orders</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <span>Reports</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <span>Graphs</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-hourglass-end"></i>
+                    </div>
+                    <span>Payment <br>Due</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-adjust"></i>
+                    </div>
+                    <span>Integration</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <span>Community</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- end sidebar -->
+    <div class="subsection">
+
+    </div>
+    <div class="content">
+        <div class="content-top-bar">
+            <div class="select">
+                <select id="standard-select">
+                    <option value="Option 1" selected>Company</option>
+                    <option value="Option 2">Terms</option>
+                    <option value="Option 3">Staff</option>
+                    <option value="Option 4">Reminders</option>
+                    <option value="Option 5">Terminology</option>
+                    <option value="Option 6">Website Application</option>
+                    <option value="Option 7">Prospect Settings</option>
+                    <option value="Option 8">Tax</option>
+                    <option value="Option 9">Invoice Color Settings</option>
+                </select>
+            </div>
+        </div>
+        <div class="content-main">
+           
+
+            <div class="row">
+                <div class="col-12 col-m-12">
+                    <a href="#">
+                        <div class="back-link">
+                            <i class="fas fa-angle-left"></i>
+                            Back
+                        </div>
+                    </a>
+                    <div class="page-title-dark">
+                        Client
+                    </div>
+                </div>
+                <div class="col-12 col-m-12 client-header">
+                    <div class="client-top">
+                        <img src="./assets/profile_picture.png" alt="">
+                        <div class="client-data">
+                            <div class="client-name">Jane Doe</div>
+                            <div class="client-loc">Miami, FL 33185 USA</div>
+                            <div class="client-status">Active</div>
+                        </div>
+                    </div>
+                    <div class="client-actions-top">
+                        <div class="client-action">
+                            <i class="fas fa-edit"></i>
+                            Edit
+                        </div>
+                    </div>
+                </div>
+
+                
+                    <div class="col-12 col-m-12">
+                        <div class="summary content-box">
+                            <div class="summary-top">
+                                Client Summary
+                                
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                    Robert Vasquez
+                                </div>
+                                <div class="summary-info-title">
+                                    Lead Owner
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                    8601715116
+                                </div>
+                                <div class="summary-info-title">
+                                    Phone
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                    N/A
+                                </div>
+                                <div class="summary-info-title">
+                                    Lead Status
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                    jane@crepemaker.com
+                                </div>
+                                <div class="summary-info-title">
+                                    Email
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                   N/A
+                                </div>
+                                <div class="summary-info-title">
+                                    Mobile
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                   Prospective Customer
+                                </div>
+                                <div class="summary-info-title">
+                                    Lead Type
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-m-12">
+                        <div class="summary content-box">
+                            <div class="summary-top">
+                                Credit Summary
+                                
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-title">
+                                    Credit Limit
+                                </div>
+                                <div class="summary-value">
+                                    $100,000.00
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-title">
+                                    Credit Used
+                                </div>
+                                <div class="summary-value">
+                                    $5,700.00
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-title">
+                                    Credit Available
+                                </div>
+                                <div class="summary-value">
+                                    $94,300.00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-m-12">
+                        <div class="summary content-box">
+                            <div class="summary-top">
+                                Activity Statements
+                                
+                            </div>
+                            <div class="summary-subtitle col-12">
+                                Funds Employed
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                    $894,948.40
+                                </div>
+                                <div class="summary-info-title">
+                                    Advance
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                    -$821,636.04
+                                </div>
+                                <div class="summary-info-title">
+                                    Retention
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                    $40,085.13
+                                </div>
+                                <div class="summary-info-title">
+                                    Discount Earned
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                    $308.99
+                                </div>
+                                <div class="summary-info-title">
+                                    Escrow Reserves
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                   $5,896,728.61
+                                </div>
+                                <div class="summary-info-title">
+                                    Adjustments
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                   $2,506,612.00
+                                </div>
+                                <div class="summary-info-title">
+                                    Unfactored
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                   $0.00
+                                </div>
+                                <div class="summary-info-title">
+                                    Purchase Orders
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                   $728,988.69
+                                </div>
+                                <div class="summary-info-title">
+                                    Net Fund Employed
+                                </div>
+                            </div>
+                            <div class="summary-subtitle col-12">
+                                Collateral
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                   $3,089.01
+                                </div>
+                                <div class="summary-info-title">
+                                    Invoices In Chargeback
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                   $324,283.60
+                                </div>
+                                <div class="summary-info-title">
+                                    Invoices In Recurse
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                   $61,027.40
+                                </div>
+                                <div class="summary-info-title">
+                                    Invoices In Dispute
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                   -$2,135,335.45
+                                </div>
+                                <div class="summary-info-title">
+                                    Available Collateral
+                                </div>
+                            </div>
+                            <div class="summary-subtitle col-12">
+                                Terms
+                            </div>
+                            <div class="summary-item">
+                                <a href="">Term Name</a>
+                            </div>
+                            <div class="summary-item">
+                                <a href="">Avg Advance %</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-m-12">
+                        <div class="summary content-box">
+                            <div class="summary-top">
+                                Financial Summary
+                                
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-title">
+                                    Open Invoices
+                                </div>
+                                <div class="summary-value">
+                                    $0.00
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-title">
+                                    Invoices #
+                                </div>
+                                <div class="summary-value">
+                                    0
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-title">
+                                    Gross Advance
+                                </div>
+                                <div class="summary-value">
+                                    $0.00
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-title">
+                                    Receipts
+                                </div>
+                                <div class="summary-value">
+                                    $0.00
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-title">
+                                    Matched Customers #
+                                </div>
+                                <div class="summary-value">
+                                    26
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-title">
+                                    Customer Credit
+                                </div>
+                                <div class="summary-value">
+                                    $0.00
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-title">
+                                    Open Invoices Discount
+                                </div>
+                                <div class="summary-value">
+                                    $0.00
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-title">
+                                    Total Discount Received
+                                </div>
+                                <div class="summary-value">
+                                    $0.00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-m-12">
+                        <div class="summary content-box">
+                            <div class="summary-top">
+                                Company Information
+                                
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                    Dadeland Crepemaker
+                                </div>
+                                <div class="summary-info-title">
+                                    Company
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                    crepemaker.com
+                                </div>
+                                <div class="summary-info-title">
+                                    Website
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                    N/A
+                                </div>
+                                <div class="summary-info-title">
+                                    Industry
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                    N/A
+                                </div>
+                                <div class="summary-info-title">
+                                    MC Number
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                   N/A
+                                </div>
+                                <div class="summary-info-title">
+                                    FEIN Number
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                   N/A
+                                </div>
+                                <div class="summary-info-title">
+                                   Annual Revenue
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                   50
+                                </div>
+                                <div class="summary-info-title">
+                                   Employees
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                   N/A
+                                </div>
+                                <div class="summary-info-title">
+                                   Credit Limit
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-m-12">
+                        <div class="summary content-box">
+                            <div class="summary-top">
+                               Contact Information
+                                
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                   Ms. Jane Doe
+                                </div>
+                                <div class="summary-info-title">
+                                    Name
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                    jane@crepemaker.com
+                                </div>
+                                <div class="summary-info-title">
+                                    Email
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                    N/A
+                                </div>
+                                <div class="summary-info-title">
+                                   Alternate Email
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                    8601715116
+                                </div>
+                                <div class="summary-info-title">
+                                    Phone
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                   N/A
+                                </div>
+                                <div class="summary-info-title">
+                                    Mobile
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                   N/A
+                                </div>
+                                <div class="summary-info-title">
+                                   Fax
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-m-12">
+                        <div class="summary content-box">
+                            <div class="summary-top">
+                                Address Information
+                                
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                    8800 Kendall Drive
+                                </div>
+                                <div class="summary-info-title">
+                                    Street
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                    Miami
+                                </div>
+                                <div class="summary-info-title">
+                                    City
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                   Florida
+                                </div>
+                                <div class="summary-info-title">
+                                    Province
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                    31157
+                                </div>
+                                <div class="summary-info-title">
+                                    Street
+                                </div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-info-value">
+                                   United States Of America
+                                </div>
+                                <div class="summary-info-title">
+                                    Country
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                    </div>
+                    
+                
+
+                <div class="col-12 col-m-12">
+                    <div class="content-box">
+                        <div class="content-box-title">
+                            Invoice Details
+                        </div>
+                        <div class="table-section">
+                            <div class="table-responsive">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Client</th>
+                                            <th>Debtor</th>
+                                            <th>Schedule</th>
+                                            <th>Inv #</th>
+                                            <th>Invoice Date</th>
+                                            <th>Invoice Amount</th>
+                                            <th>Discount</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>0SAM TEST</th>
+                                            <th>A-1 Delivery Services, INC</th>
+                                            <th><a href="#" class="table-link">000S-0009</a></th>
+                                            <th><a href="#" class="table-link">10011</a></th>
+                                            <th>12/10/15</th>
+                                            <th>$10.00</th>
+                                            <th>0.00%</th>
+                                            <th>Closed</th>
+                                        </tr>
+                                        <tr>
+                                            <th>0SAM TEST</th>
+                                            <th>3 Peaks Logistics LP</th>
+                                            <th><a href="#" class="table-link">000S-0002</a></th>
+                                            <th><a href="#" class="table-link">10013</a></th>
+                                            <th>12/10/15</th>
+                                            <th>$100.00</th>
+                                            <th>0.00%</th>
+                                            <th>Closed</th>
+                                        </tr>
+                                        <tr>
+                                            <th>0SAM TEST</th>
+                                            <th>A-1 Delivery Services, INC</th>
+                                            <th><a href="#" class="table-link">000S-0004</a></th>
+                                            <th><a href="#" class="table-link">10015</a></th>
+                                            <th>12/10/15</th>
+                                            <th>$1,300.00</th>
+                                            <th>0.00%</th>
+                                            <th>Closed</th>
+                                        </tr>
+                                        <tr>
+                                            <th>0SAM TEST</th>
+                                            <th>Test321</th>
+                                            <th><a href="#" class="table-link">000S-0005</a></th>
+                                            <th><a href="#" class="table-link">10016</a></th>
+                                            <th>12/10/15</th>
+                                            <th>$50,000.00</th>
+                                            <th>0.00%</th>
+                                            <th>Closed</th>
+                                        </tr>
+                                        <tr>
+                                            <th>0SAM TEST</th>
+                                            <th>3 Peaks Logistics LP</th>
+                                            <th><a href="#" class="table-link">000S-0010</a></th>
+                                            <th><a href="#" class="table-link">121492</a></th>
+                                            <th>12/10/15</th>
+                                            <th>$200,000.00</th>
+                                            <th>0.00%</th>
+                                            <th>Closed</th>
+                                        </tr>
+                                        <tr>
+                                            <th>0SAM TEST</th>
+                                            <th>A-1 Delivery Services, INC</th>
+                                            <th><a href="#" class="table-link">000S-0009</a></th>
+                                            <th><a href="#" class="table-link">12345678</a></th>
+                                            <th>12/10/15</th>
+                                            <th>$1,000,000.00</th>
+                                            <th>0.00%</th>
+                                            <th>Closed</th>
+                                        </tr>
+                                        
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="content-box">
+                        <div class="col-12 col-m-12 bottom-line">
+                            <div class="col-12">
+                                <div class="tabs-section">
+                                    <div class="tab">
+                                        <a href="" class="tab-active">Notes</a>
+                                    </div>
+                                    <div class="tab">
+                                        <a href="">Attachment</a>
+                                    </div>
+                                    <div class="tab">
+                                        <a href="">Event</a>
+                                    </div>
+                                    <div class="tab">
+                                        <a href="">Task</a>
+                                    </div>
+                                    <div class="tab">
+                                        <a href="">Call Log</a>
+                                    </div>
+                                    <div class="tab">
+                                        <a href="">Email</a>
+                                    </div>
+                                    <div class="tab">
+                                        <a href="">Contacts</a>
+                                    </div>
+                                    <div class="tab">
+                                        <a href="">Checklist</a>
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                        </div>
+                    </div>
+                   
+                </div>
+             
+
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <script src="./js/collapse_btn.js"></script>
+</body>
+
+</html>
